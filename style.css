@@ -1,0 +1,190 @@
+/* Dynamic resizing tip#1: Change margin: 30px; to margin: 0px; then scroll down to Dynamic resizing tip#2 */
+body {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ margin: 30px;
+ padding: 0px;
+ background-color: #9FAC9F;
+ color: #5A6F5A;
+}
+
+h1 {
+ font-family: Times New Roman, serif;
+ font-size: 26px;
+ font-weight: normal;
+ color: #e9f2fc;
+ background-color: transparent;
+ padding: 0px;
+ margin: 0px;
+ }
+
+h2 {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 14px;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+ h2.titletext {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 14px;
+ border-bottom: 1px solid #769176;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+p {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ padding-left: 15px;
+ line-height: 18px;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+a {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ text-decoration: underline;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+a:visited {
+ text-decoration: underline;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+a.navlink {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 11px;
+ font-weight: normal;
+ text-decoration: none;
+ color: #e9f2fc;
+ background-color: transparent;
+ }
+
+a.navlink:visited {
+ text-decoration: none;
+ color: #e9f2fc;
+ background-color: transparent;
+ }
+
+a.newslink {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 10px;
+ font-weight: bold;
+ line-height: 10px;
+ text-decoration: none;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+a.newslink:visited {
+ text-decoration: none;
+ color: #900020;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+a.newslink:hover {
+ text-decoration: underline;
+ }
+
+li {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+ line-height: 18px;
+ padding-bottom: 7px;
+ color: #5A6F5A;
+ background-color: transparent;
+ }
+
+.navcell {
+ padding: 3px 7px 3px 7px;
+ }
+
+.newsheader {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ padding-left: 5px;
+ color: #e9f2fc;
+ background-color: #6C856C;
+ }
+
+.newscell {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ padding-top: 7px;
+ padding-left: 5px;
+ padding-right: 5px;
+ padding-bottom: 9px;
+ color: #5A6F5A;
+ background-color: #9FAC9F;
+ }
+
+ .navinput {
+  vertical-align: middle;
+  width: 120px;
+  color: #5A6F5A;
+  background-color: #e9f2fc;
+ }
+
+ .navbutton {
+  position: relative;
+  left: 3px;
+  width: 30px;
+  background-color: #5A6F5A;
+  color: #e9f2fc;
+  font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  vertical-align: middle;
+ }
+
+.update {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 14px;
+ color: #e9f2fc;
+ background-color: transparent;
+ }
+
+.copyright {
+ font-family: Verdana, Lucida, helvetica, arial, sans-serif;
+ font-size: 10px;
+ font-weight: normal;
+ line-height: 10px;
+ color: #464c64;
+ background-color: transparent;
+ }
+ 
+.stopTooltip p { 
+ text-align: center;
+ white-space: nowrap;
+ margin: 0;
+ padding: 2px 0.5ex;
+ border: 1px solid #555;
+ font-weight: bold;
+ background: #fff;
+}
+
+.stationname {
+ font-family:Arial; 
+ font-size:20px; 
+ font-weight:bold;
+}

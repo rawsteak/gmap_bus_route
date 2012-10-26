@@ -1,0 +1,3 @@
+* Albany Bus Routes - Google Maps
+
+This was an early attempt to implement an Albany bus routes layer onto Google Maps when they released their API in April 2006.  Bus stops were handcoded into XML from paper schedules.  Bus stops also linked to bus schedules and offered preview of nearby establishments.

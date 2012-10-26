@@ -1,0 +1,102 @@
+<busroutes>
+<stop>
+<coord lat="42.689249" lng="-73.851814" />
+<address>Crossgates Mall</address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<busline image="12.png" url="Route_12%20September%202005.pdf" />
+<busline image="90.png" url="Route_90%20%20May%202006.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.683823" lng="-73.840420" />
+<address>Stuyvesant Plaza</address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.684982" lng="-73.826000" />
+<address><![CDATA[Science Library -<br/>SUNY Albany]]></address>
+<busline image="11.png" url="Route_11%20August%202004.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.687502" lng="-73.822358" />
+<address><![CDATA[Collins Circle -<br/>SUNY Albany]]></address>
+<busline image="12.png" url="Route_12%20September%202005.pdf" />
+<busline image="90.png" url="Route_90%20%20May%202006.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.680668" lng="-73.809242" />
+<address><![CDATA[State Offices -<br/>Building 12]]></address>
+<busline image="12.png" url="Route_12%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.666434" lng="-73.791716" />
+<address><![CDATA[Western Ave & Allen St]]></address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<busline image="11.png" url="Route_11%20August%202004.pdf" />
+<busline image="12.png" url="Route_12%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.670808" lng="-73.787666" />
+<address><![CDATA[Washington Ave &<br/>Allen St]]></address>
+<busline image="12.png" url="Route_12%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.660130" lng="-73.771303" />
+<address>Draper Hall - SUNY Albany</address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<busline image="11.png" url="Route_11%20August%202004.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.656797" lng="-73.763489" />
+<address><![CDATA[Washington Ave &<br/>Lark St.]]></address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<busline image="11.png" url="Route_11%20August%202004.pdf" />
+<busline image="12.png" url="Route_12%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.647920" lng="-73.750480" />
+<address><![CDATA[Hudson Ave & Broadway]]></address>
+<busline image="11.png" url="Route_11%20August%202004.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.707164" lng="-73.820571" />
+<address><![CDATA[Colonie Center & <br/>Wolf Rd]]></address>
+<busline image="1.png" url="Route_1%20May%202006.pdf" />
+<busline image="55.png" url="Route_55_May%202006.pdf" />
+<busline image="90.png" url="Route_90%20%20May%202006.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.650425" lng="-73.752363" />
+<address>Ten Eyck Plaza</address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+
+<stop>
+<coord lat="42.653132" lng="-73.748983" />
+<address><![CDATA[Broadway & Orange St]]></address>
+<busline image="10.png" url="Route_10%20September%202005.pdf" />
+<tab more="0"></tab>
+</stop>
+</busroutes>

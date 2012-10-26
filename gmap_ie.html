@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<!-- Page Title -->
+<title>*biopsy</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<!-- Update these tags -->
+<meta name="description" content="This is the Evolver open source web design. Use anyway you see fit.">
+<meta name="keywords" content="Evolver, Rialto, open source web design, oswd, free web template">
+
+<link rel="stylesheet" type="text/css"  href="style.css"/>
+<!-- CSS USED TO GO HERE -->
+
+<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAf6pP3wFE0jvIp1qRX4EFBBQLwG_fQGsGQknDcSkXQV_5JGm6URT6ebGbKm5yNskg04HCbMX9yuCVaw" type="text/javascript"></script>
+
+<script type="text/javascript">
+    //<![CDATA[
+
+// create generic icon
+var icon = new GIcon();
+icon.image = "dot.png";
+icon.shadow = "dot.png";
+icon.iconSize = new GSize(14, 14);
+icon.shadowSize = new GSize(14, 14);
+icon.iconAnchor = new GPoint(10, 10);
+icon.infoWindowAnchor = new GPoint(10, 10);
+
+var bus_stops = [];
+var htmls = [];
+var total = 0;
+
+function load() {
+	if (GBrowserIsCompatible()) {
+		var map = new GMap2(document.getElementById("map"));
+
+		// ============================================================
+		// == Create the GTileLayer ===================================
+		var tilelayers = [new GTileLayer(new GCopyrightCollection("Albany CDTA Bus Map"),7,14)];
+
+		tilelayers[0].getTileUrl = function (a,b) {
+			return "http://www.albany.edu/~ri639135/maptiles/"+b+"_"+(a.x)+"_"+(a.y)+".gif";
+		};
+
+		tilelayers[0].getCopyright = function(a,b) {
+			return {prefix:"Map: ", copyrightTexts:["CDTA Bus"]};
+		};
+
+		tilelayers[0].getOpacity = function(a) {
+			return 1;
+		};
+
+		// ==============================================================
+		// ====== Create a two layer "CDTA Streets" layer ===============
+
+		// === It has two layers; one is the "CDTA" map and the other is the top layer from G_HYBRID_MAP
+		var htilelayers = [
+			G_NORMAL_MAP.getTileLayers()[0],  // a reference to the NORMAL tile layer
+			tilelayers[0]                     // a reference to the tile layer from the custom map
+		];
+
+		var custommap2 = new GMapType(htilelayers, G_HYBRID_MAP.getProjection(), "CDTA Streets", {maxResolution:18,minResolution:7,errorMessage:_mMapError});
+
+		// === Add it to the list of map types ===
+		map.addMapType(custommap2);
+
+		map.addControl(new GMapTypeControl());
+		map.addControl(new GSmallMapControl());
+
+		map.setCenter(new GLatLng(42.6877352419141,-73.75980377197266), 12, custommap2);
+	}
+}
+    //]]>
+</script>
+
+</head>
+
+<body onload="load()" onunload="GUnload()">
+
+<!-- Outer Border -->
+<!-- Dynamic resizing tip#2: Change width="700" to width="100%" -->
+<table cellspacing="0" cellpadding="1" border="0" bgcolor="#5a6f5a" align="center" width="700"><tr><td>
+<table cellspacing="0" cellpadding="1" border="0" bgcolor="#cccccc" width="100%"><tr><td>
+<table cellspacing="0" cellpadding="2" border="0" bgcolor="#ffffff" width="100%"><tr><td>
+<table cellspacing="0" cellpadding="1" border="0" bgcolor="#5a6f5a" width="100%"><tr><td>
+<table cellspacing="0" cellpadding="1" border="0" bgcolor="#7b917b" width="100%"><tr><td>
+<table cellspacing="1" cellpadding="0" border="0" width="100%">
+
+<tr><td>
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr>
+<td style="padding-left: 20px" align="left" valign="bottom">
+<!-- Page Title -->
+<br><h1>*biopsy</h1><br>
+</td>
+<!-- Navigation Bar -->
+<td align="right" valign="bottom">
+	<table cellspacing="1" cellpadding="2" border="0" bgcolor="#5A6F5A" width="60%">
+	<tr>
+	<td bgcolor="#6C856C" class="navcell" align="center"><a class="navlink" href="./../index.html">home</a></td>
+	<td bgcolor="#6C856C" class="navcell" align="center"><a class="navlink" href="./../projects.html">projects</a></td>
+	<td bgcolor="#6C856C" class="navcell" align="center"><a class="navlink" href="./../about.html">about</a></td>
+	<td bgcolor="#6C856C" class="navcell" align="center"><a class="navlink" href="./../links.html">links</a></td>
+	</tr>
+	</table>
+</td>
+</tr></table>
+</td></tr>
+
+<!-- Page Middle -->
+<tr>
+  <td>
+    <table cellspacing="1" cellpadding="2" border="0" bgcolor="#5A6F5A" width="100%">
+    <tr>
+      <td bgcolor="#cccccc" style="padding-left: 10px">
+        <table cellpadding="2" cellspacing="5" border="0">
+        <tr>
+          <!-- Adjusting the width of the following cell, adjust the width of *all* left-hand boxes (search, news, etc.) uniformly -->
+		<td valign="top" width="185" style="padding-top: 12px">
+
+		<!-- Search goes here -->
+
+		<!-- News Section -->
+		<table cellspacing="0" cellpadding="1" border="0" bgcolor="#5a6f5a" width="100%"><tr><td>
+		<table cellspacing="0" cellpadding="1" border="0" bgcolor="#cccccc" width="100%"><tr><td>
+		<table cellspacing="0" cellpadding="2" border="0" bgcolor="#ffffff" width="100%"><tr><td>
+		<table cellspacing="0" cellpadding="1" border="0" bgcolor="#5a6f5a" width="100%"><tr><td>
+		<table cellspacing="2" cellpadding="2" border="0" bgcolor="#6C856C" width="100%">
+
+		<tr><td class="newsheader">
+			<strong>NEWS</strong>
+		</td></tr>
+
+		<tr><td class="newscell">
+			<strong>05 Jul 2006</strong><br><br>
+			Another awesome and productive day.  Most stops for 11 bus line have been documented
+			and entered to XML file.  Also added tabbed windows for stops with nearby stores.  Time
+			for some much needed rest :)
+		</td></tr>
+
+		<tr><td class="newscell">
+			<strong>03 Jul 2006</strong><br><br>
+			WOW.  So much work and I'm still happy!  First preliminary zoom of <b>Entire Albany area</b>
+			and most bus lines displayed that run at least 5 times a week.
+		</td></tr>
+
+		<tr><td class="newscell">
+			<strong>20 Jun 2006</strong><br><br>
+			Finished loading XML file for the 12 bus route.  So far, 1 way takes 15 points! Ouch!!
+		</td></tr>
+
+
+		<tr><td class="newscell">
+			<strong>19 Jun 2006</strong><br><br>
+			Yay, first albany google map available!
+		</td></tr>
+
+		<tr><td class="newscell">
+			<strong>19 Jul 2006</strong><br><br>
+			<a class="newslink" href="http://www.cdta.org">Albany's Bus System</a> has crappy busmaps.
+			If only there was someone who could fix this problem....
+		</td></tr>
+
+		</table>
+		</td></tr></table>
+		</td></tr></table>
+		</td></tr></table>
+		</td></tr></table>
+
+		<table height=600 width=200>
+		</table>
+
+		<!-- Add more left-hand tables here if you like -->
+
+		</td>
+
+		<!-- Content -->
+		<td valign="top">
+		<table cellspacing="0" cellpadding="0" border="0">
+		<tr>
+		<td bgcolor="#cccccc" style="padding-left: 10px; padding-top: 12px; padding-right: 15px">
+
+		<!-- *************************************************** -->
+		<!-- *************************************************** -->
+	    <div id="map" style="width: 700px; height: 600px"></div>
+	    <!-- *************************************************** -->
+	    <!-- *************************************************** -->
+
+		<h2 class="titletext">raw linksteak</h2>
+
+		<ul>
+			<li>
+				Plan to add bus lines down here.  clicking on bus direction should switch colored
+				lines above (northbound, southbound)
+			</li>
+			<li>
+				Another bus line.
+			</li>
+			<li>
+				Another bus line.
+			</li>
+		</ul>
+
+		Webpage Design and Code by
+		<em><a href="http://www.cafe-society.com">Lee J. Moore</a>, 2003</em></p>
+
+		</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<!-- Last Update -->
+<tr>
+<td align="right" class="update" bgcolor="#6C856C">
+	Last Update: 05 Junly 2006
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+<!-- Copyright Info -->
+<tr>
+<td align="right" class="copyright">
+	&copy; 2006 Rafael Iba&ntilde;ez
+</td>
+</tr>
+
+</table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+
+</body>
+</html>
